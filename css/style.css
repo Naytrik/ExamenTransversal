@@ -1,0 +1,61 @@
+
+/*  Barra de navegacions */
+.navbar{
+    padding: 2rem;
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Switch button Cambiar de modo día a noche y otras cosas */
+
+*{
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+body{
+  background-color: #f8f8f8;
+}
+
+
+/* Tamano del boton de luz  width y height para el alto y el ancho del boton*/
+/* margin top lo aleja de arriba en 0 no está tan abajo, ese para moverlo, margin rigth para alejarlo de la derecha*/
+#luz{
+  background-color: #f8f8f8;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  box-shadow: inset 4px 4px 6px #cecece;
+              inset: -4px -4px 6px #fff;
+  margin: 0px auto;
+  margin-top: 0px;
+  margin-right: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.toggle{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 40px;
+  height: 40px;
+  transform: scale(.7);
+  background-color: linear-gradient(145deg, #d8d8d8, #ffffff);
+  border-radius: 25px;
+  box-shadow: 3px 3px 8px #c4c4c4
+              -3px -3px 8px #fff;
+}
+
+#luz.active.toggle{
+  left: 40px;
+}
+
+body.active{
+  background-color: rgb(23, 23, 23);
+}
