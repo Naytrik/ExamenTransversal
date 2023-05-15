@@ -1,4 +1,4 @@
 Swal.fire({
-    title: "Bienvenido!"
+    title: "Está seguro que desea eliminar?"
 });
 
