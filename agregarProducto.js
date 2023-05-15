@@ -70,7 +70,7 @@ function mostrarProductos() {
         <td width=300>${productos[i].producto}</td>
         <td width=200>${productos[i].precio}</td>
         <td width=300><img style="width:200px;" src="${productos[i].url}"/></td>
-        <td><button class="btn btn-primary onclick="javascript:eliminarProducto('${productos[i].producto}');">ELIMINAR</button></td>
+        <td><button class="btn btn-primary" onclick="javascript:eliminarProducto('${productos[i].producto}');">ELIMINAR</button></td>
         <table>`;
     }
     tabla.innerHTML = contenido;
