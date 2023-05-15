@@ -33,13 +33,23 @@
               </a>
               <ul class="navbar-nav d-flex justify-content-center align-items-center">
                 <li class="nav-item">
-                  <a class="nav-link" href="formulario.html">Cuenta<span class="sr-only"></span></a>
+                  <a class="nav-link" href="#"></a>
+                  <div id="temperatura"></div>
+                  <div id="mostrarHora"></div>
+             
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="compra.html">Proyectos</a>
+                  <a class="nav-link" href="formulario.html"sr-only> Formulario</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contactos</a>
+                  <a class="nav-link" href="compra.html">Compra</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"></a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Agregar Producto
+                  </button>
                 </li>
                 <li id="luz" class="nav-item">
                   <div class="toggle"></div>
@@ -91,112 +101,55 @@
         </a>
       </div>
 
-      <!-- cambiar el logo y el color si amerita
-      faltan por hacer las cards y los modal
-      se debe ajustar a diferentes tamaños pero eso ya está 
-      También debe contener los formularios para:
-      • Agregar productos
-      • Editar los productos
-      • Listar los productos.
-      Contener un carrito de compras.
-      eso es la parte 1 en total y lo que me falta-->
-  
+  <div id="divTarjetas"></div>
         <!-- Contenedor de las tarjetas -->
-        <div class="row text-center mt-3">
-          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title">Card Title 1</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis
-                  quaerat praesentium rerum et non vitae quasi veniam, earum animi
-                  sequi dolores ad optio nam expedita laudantium neque. Placeat,
-                  animi consectetur.
-                </p>
-                <a href="#" class="btn btn-info">Ir algùn lado</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title">Card Title 2</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis
-                  quaerat praesentium rerum et non vitae quasi veniam, earum animi
-                  sequi dolores ad optio nam expedita laudantium neque. Placeat,
-                  animi consectetur.
-                </p>
-                <a href="#" class="btn btn-info">Ir algùn lado</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="card-title">Card Title 3</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis
-                  quaerat praesentium rerum et non vitae quasi veniam, earum animi
-                  sequi dolores ad optio nam expedita laudantium neque. Placeat,
-                  animi consectetur.
-                </p>
-                <a href="#" class="btn btn-info">Ir algùn lado</a>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <!-- contenedor de foto y texto -->
-        <div class="row align-items-center">
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-            <img src="img/abono1.png" class="img-fluid" alt="image" />
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-            <h1 class="display 3">abonos</h1>
-            <p class="text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-              iste commodi optio ex minus, fugiat harum excepturi est praesentium
-              magnam incidunt deleniti enim saepe tempore perspiciatis. Magnam
-              eius veniam, vitae dicta at eligendi facere odio dolore corporis
-              sit, reiciendis esse voluptate sequi omnis ab repellat neque numquam
-              enim dignissimos voluptatibus. Repellat accusantium tempora itaque
-              ipsa adipisci ad fugiat? Unde nesciunt animi odit pariatur corrupti
-              iure, minima sequi rem quas repellendus porro minus iusto error ad
-              vitae neque debitis magni nobis praesentium aut nulla beatae vel
-              ratione ipsam? Hic quas blanditiis temporibus, pariatur repellendus
-              accusamus nam debitis voluptate corporis repellat totam! ipsum dolor
-              sit amet consectetur adipisicing elit. Veniam mollitia error iste
-              dolores soluta, quas tenetur repellendus! Ut repellendus molestiae
-              nostrum minima ratione at veniam dolores, modi illo quidem aut!
-            </p>
-          </div>
-        </div>
-  
-        <div class="row align-items-center">
-          <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mt-3">
-              <form>
-                      <div class="mb-2">
-                        <label for="txtEmail" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="txtEmail" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                      </div>
-                      <div class="mb-2">
-                          <label for="txtComment" class="form-label">Comentario</label>
-                          <textarea class="form-control" id="txtComment" rows="7"></textarea>
-                        </div>
-              </form>
-            </div>
-        </div>
-          <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 mt-3">
+         <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 mt-3">
               <img src="img/abono2.png" class="img-fluid" alt="image" />
             </div>
         </div>
       </div>
 
-      <!-- carrito de compra js -->
-      <script src="carrito.js"></script>
-      <script src="pedido.js"></script>
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Formulario</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container mt-3">
+                <div class="row">
+                    <div class="col-6">
+                        <label for="productoInput" class="form-label">Producto</label>
+                        <input type="producto" class="form-control" id="productoInput" placeholder="Escribe le producto">
+                    </div>
+                    <div class="col-6">
+                        <label for="precioInput" class="form-label">precio</label>
+                        <input type="precio" class="form-control" id="precioInput" placeholder="Escribe el precio">
+                    </div>
+                    <div class="col-12 mt-1">
+                        <label for="urlInput" class="form-label">Foto</label>
+                        <input type="url" class="form-control" id="urlInput" placeholder="Escribe el url">
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-3">
+                <div class="butAdd">
+                    <button type="button" clbutton type="button"ss="btn">Crear card</button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script src="hora.js"></script>
+      <script src="mostrarTarjetas.js"></script>
+      <script src="formulario.html"></script>
 
       <!-- Toggle boton de la luz -->
     <script src="toggle.js"></script>

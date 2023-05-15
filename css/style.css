@@ -59,3 +59,14 @@ body{
 body.active{
   background-color: rgb(23, 23, 23);
 }
+
+#mostrarHora{
+  color: #c4c4c4;
+  text-align: center;
+}
+
+#temperatura{
+  color: yellow;
+  font-size: 10px;
+}
+

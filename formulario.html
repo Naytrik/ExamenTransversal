@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+
+
+    <!-- Bootstrap css Preguntar por está versión y el carousel--> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- FontAwesome son iconos-->
+    <script src="https://kit.fontawesome.com/84559bdce6.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <!-- NavBar Barra de navegacion -->
+    <header>
+      <div class="container">
+        <div class="row justify-content-between mb-5">
+          <nav class="navbar navbar-expand-md navbar-dark bg-dark  fixed-top bg-dark mt-1 mb-3 p-1">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+              <a class="navbar-brand" href="#">
+              </a>
+              <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"></a>
+                  <div id="mostrarHora"></div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Inicio<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Agregar producto</a>
+                </li>
+                <li id="luz" class="nav-item">
+                  <div class="toggle"></div>
+                </li>
+              </ul>
+            </div>
+          </nav> 
+        </div>
+      </div>
+    </header>
+
+    <br>
+    
+    <h1>Formulario</h1>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-6">
+                <label for="productoInput" class="form-label">Producto</label>
+                <input type="producto" class="form-control" id="productoInput" placeholder="Escribe le producto">
+            </div>
+            <div class="col-6">
+                <label for="precioInput" class="form-label">precio</label>
+                <input type="precio" class="form-control" id="precioInput" placeholder="Escribe el precio">
+            </div>
+            <div class="col-12 mt-1">
+                <label for="urlInput" class="form-label">Foto</label>
+                <input type="url" class="form-control" id="urlInput" placeholder="Escribe el url">
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <div class="butAdd">
+            <button type="button" id="agregaBtn" type="button" class="btn">Crear card</button>
+      </div>
+      <br>
+      <hr>
+
+      <table id="tableProductos" width="500">
+        <tr width="300">PRODUCTO</tr>
+        <tr width="300">PRECIO</tr>
+        <tr width="300">URL</tr>
+      </table>
+      <div id="divProductos"></div>
+      <script src="hora.js"></script>
+      <script src="agregarProducto.js"></script>
+      <script src="index.html"></script>
+
+      <!-- Toggle boton de la luz -->
+    <script src="toggle.js"></script>
+
+    <!-- SweetAlert2 son alertas /modales?-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="sweetAlert.js"></script> SACAR CUANDO SE UTILICE-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+  </body>
+</html>
